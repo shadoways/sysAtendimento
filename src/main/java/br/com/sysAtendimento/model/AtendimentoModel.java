@@ -28,9 +28,12 @@ public class AtendimentoModel {
 	
 	@Column(name="hour")
 	private String hour;
-	
+		
 	@Column(name="status")
 	private String status;
+	
+	@Column(name="created")
+	private Calendar created;
 	
 	@Column(name="canceled")
 	private Calendar canceled;
@@ -82,10 +85,18 @@ public class AtendimentoModel {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	
+	public Calendar getCreated(){
+		return created;
+	}
+	
+	public void setCreated(Calendar created){
+		this.created = created;
+	}
 
 	public Calendar getCanceled() {
 		return canceled;
-	}
+	}	
 
 	public void setCanceled(Calendar canceled) {
 		this.canceled = canceled;

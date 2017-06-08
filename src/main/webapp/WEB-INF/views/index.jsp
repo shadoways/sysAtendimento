@@ -1,12 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
 <body>
-	TESTE
+<h1>SYS ATENDIMENTO</h1>
+<br/>
+<br/>
+ 
+<ul style="list-style-type:square">
+  <li><a href="">Atendimentos</a></li>
+  <li><a href="">Eventos</a></li>
+  <li><a href="">Escalas</a></li>
+  <li><a href="">Membros</a></li>
+  <li><a href="">Noticias</a></li>
+  <li><a href="">Login</a></li>  
+</ul>
+ 
 </body>
 </html>
