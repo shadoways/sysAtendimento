@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+			 version="2.0">
+ 
+	<persistence-unit name="PERSISTENCE_UNIT" transaction-type="RESOURCE_LOCAL">
+ 
+	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+ 
+	<jta-data-source>java:jboss/datasources/sys_atendimentoDS</jta-data-source>
+ 
+	<class>br.com.sysAtendimento.model.AtendimentoModel</class>
+	<class>br.com.sysAtendimento.model.EventoParticipanteModel</class>
+	<class>br.com.sysAtendimento.model.EventoModel</class>
+	<class>br.com.sysAtendimento.model.LoginModel</class>
+	<class>br.com.sysAtendimento.model.TipoLoginModel</class>
+	<class>br.com.sysAtendimento.model.MembroModel</class>
+	<class>br.com.sysAtendimento.model.TipoMembroModel</class>
+	<class>br.com.sysAtendimento.model.MusicoModel</class>
+	<class>br.com.sysAtendimento.model.NoticiaModel</class>
+	<class>br.com.sysAtendimento.model.TipoNoticiaModel</class>
+	<class>br.com.sysAtendimento.model.EscalaModel</class>
+	<class>br.com.sysAtendimento.model.TokenModel</class>
+ 
+	<properties>
+	  <property name="hibernate.hbm2ddl.auto" value="update" />
+	  <property name="hibernate.show_sql" value="true" />
+	  <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
+	</properties>
+ 
+       </persistence-unit>
+ 
+</persistence>
